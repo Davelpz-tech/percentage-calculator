@@ -76,6 +76,7 @@ a:hover {
 
 .socials i:hover {
     transform: scale(1.1);
+    color: var(--secondary-color);
 }
 
 .search {
@@ -172,7 +173,7 @@ a:hover {
     gap: 1rem;
     margin-top: 1rem;
 }
-
+/*---------------------------------------------------- BUTTON STYLES ----------------------------------------------------*/
 button {
     background-color: var(--primary-color);
     color: white;
@@ -180,12 +181,28 @@ button {
     border-radius: .5em;
     padding: 1.5rem 2rem;
     transition: .2s ease-in-out;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
     cursor: pointer;
+    padding: 1.5rem 0;
+}
+
+button a:hover {
+    color: white;
 }
 
 .outline {
     background: none;
+    transition: .2s ease-in-out;
+}
+
+.outline a {
     color: var(--primary-color);
+    transition: .2s ease-in-out;
+
 }
 
 button:hover {
@@ -196,13 +213,17 @@ button:hover {
 
 .outline:hover {
     background: none;
-    color: var(--secondary-color);
+}
+
+.outline:hover > a {
+    color: tomato;
 }
 
 .one {
     grid-column-start: 1;
     grid-column-end: 3;
 }
+/*---------------------------------------------------- BUTTON STYLES ----------------------------------------------------*/
 
 .featured-container {
     padding: 1rem 5%;
@@ -270,6 +291,7 @@ button:hover {
 }
 
 .highlight-muted {
+    color: var(--p-color);
     background-color: rgb(211, 211, 211);
     border-radius: .2em;
 }
